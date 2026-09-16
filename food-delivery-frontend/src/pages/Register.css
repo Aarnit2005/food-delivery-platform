@@ -1,0 +1,493 @@
+.register-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #ffffff;
+  color: #171717;
+}
+
+/* =========================
+   LEFT VISUAL PANEL
+========================= */
+
+.register-visual {
+  min-height: 100vh;
+  background: #fff5ef;
+  padding: 34px 8%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-visual::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: #ffe3d4;
+  top: -170px;
+  right: -170px;
+}
+
+.register-visual::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: #ffeadf;
+  bottom: -130px;
+  left: -120px;
+}
+
+.register-brand {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #171717;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.register-brand-mark {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background: #ff5a1f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.register-visual-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  margin: auto 0;
+  padding: 35px 0;
+}
+
+.register-food-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 37px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  margin-bottom: 27px;
+}
+
+.register-visual-eyebrow {
+  display: block;
+  color: #ff5a1f;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+  margin-bottom: 10px;
+}
+
+.register-visual-content h1 {
+  margin: 0;
+  font-size: clamp(35px, 3.2vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -1.7px;
+}
+
+.register-visual-content > p {
+  margin: 20px 0 0;
+  max-width: 470px;
+  color: #777;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.register-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.register-benefits div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.register-benefits span {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #ff5a1f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.register-benefits p {
+  margin: 0;
+  color: #555;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.register-visual-footer {
+  position: relative;
+  z-index: 2;
+  color: #aaa;
+  font-size: 11px;
+}
+
+/* =========================
+   RIGHT FORM
+========================= */
+
+.register-form-section {
+  min-height: 100vh;
+  padding: 34px 8%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #777;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.register-back:hover {
+  color: #ff5a1f;
+}
+
+.register-form-container {
+  width: min(410px, 100%);
+  margin: auto;
+}
+
+.register-form-header {
+  margin-bottom: 24px;
+}
+
+.register-mobile-logo {
+  display: none;
+}
+
+.register-eyebrow {
+  display: block;
+  color: #ff5a1f;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.register-form-header h2 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: -0.8px;
+}
+
+.register-form-header p {
+  margin: 9px 0 0;
+  color: #888;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.register-error {
+  background: #fff1f1;
+  border: 1px solid #ffcaca;
+  color: #c62828;
+  border-radius: 10px;
+  padding: 11px 13px;
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.register-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.register-field label {
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.register-input-wrapper {
+  height: 45px;
+  border: 1px solid #dddddd;
+  border-radius: 11px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 13px;
+  gap: 10px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.register-input-wrapper:focus-within {
+  border-color: #ff8a60;
+  box-shadow: 0 0 0 3px #fff1eb;
+}
+
+.register-input-wrapper > svg {
+  color: #999;
+  flex-shrink: 0;
+}
+
+.register-input-wrapper input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #222;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.register-input-wrapper input::placeholder {
+  color: #aaa;
+}
+
+.register-password-toggle {
+  border: none;
+  padding: 3px;
+  background: transparent;
+  color: #999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-password-toggle:hover {
+  color: #555;
+}
+
+.password-hint {
+  color: #999;
+  font-size: 10px;
+}
+
+/* =========================
+   SUBMIT
+========================= */
+
+.register-submit {
+  height: 48px;
+  border: none;
+  border-radius: 11px;
+  background: #ff5a1f;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 0 17px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.register-submit:hover:not(:disabled) {
+  background: #e94c13;
+  transform: translateY(-1px);
+}
+
+.register-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.register-submit span {
+  font-size: 18px;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.register-divider {
+  position: relative;
+  height: 25px;
+  margin: 18px 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #eeeeee;
+}
+
+.register-divider span {
+  position: relative;
+  background: #ffffff;
+  padding: 0 12px;
+  color: #aaa;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.register-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.register-login span {
+  color: #777;
+}
+
+.register-login a {
+  color: #ff5a1f;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.register-login a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   SECURITY
+========================= */
+
+.register-security {
+  margin-top: 22px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  background: #f8faf8;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #777;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.register-security svg {
+  color: #17843b;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+  .register-page {
+    grid-template-columns: 1fr;
+  }
+
+  .register-visual {
+    display: none;
+  }
+
+  .register-form-section {
+    min-height: 100vh;
+    padding: 28px 7%;
+  }
+
+  .register-mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #171717;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+
+  .register-mobile-logo span {
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    background: #ff5a1f;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+  }
+
+  .register-form-container {
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-form-section {
+    padding: 23px 6%;
+  }
+
+  .register-form-header h2 {
+    font-size: 27px;
+  }
+
+  .register-mobile-logo {
+    margin-bottom: 34px;
+  }
+
+  .register-form {
+    gap: 13px;
+  }
+}
