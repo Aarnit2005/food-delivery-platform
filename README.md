@@ -1,4 +1,4 @@
-# 🍔 Food Delivery Platform
+# Food Delivery Platform
 
 A full-stack food delivery platform built using **Java Spring Boot** and **React**, designed to simulate a real-world food ordering ecosystem with restaurant discovery, menu browsing, cart management, order processing, and user management.
 
